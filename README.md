@@ -19,7 +19,6 @@ Respositório para armazenar resumos sobre Git e GitHub do curso de versionament
 
 
 
-
 \## 💻 Resumos das aulas
 
 
