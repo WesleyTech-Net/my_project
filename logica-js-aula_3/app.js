@@ -2,7 +2,8 @@
 alert('BEM-VINDO AO JOGO: NÚMERO SECRETO');
 
 //variável para armazenar o número
-let numeroSecreto = parseInt(Math.random() * 100 + 1);//escolhe de forma aleatória os números entre 1 e 100
+let numeroMaximo = 6000;
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);//escolhe de forma aleatória os números entre 1 e 100
 console.log('Valor do chute: ' + numeroSecreto);
 
 //input para pedir a escolha do número para o usuário 
@@ -13,7 +14,7 @@ let tentativas = 1;
 //enquanto chute não for igual ao número secreto ficará repetindo
 while (escolha != numeroSecreto){
 
-    escolha = prompt('Escolha um número entre 1 e 100: ');
+    escolha = prompt(`Escolha um número entre 1 e ${numeroMaximo} : `);
     //condição caso a escolha seja igual ao número secreto ou não seja igual ao número secreto 
     if (escolha == numeroSecreto) {
         //console.log é uma ferramenta para desenvolvimento, e não para usuários!
