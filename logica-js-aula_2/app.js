@@ -30,5 +30,3 @@ while (escolha != numeroSecreto){
     //para incrementar da mesma forma que se faz em python "tentativas += 1"
     tentativas ++;
 }
-
-
