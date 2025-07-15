@@ -1,0 +1,84 @@
+/* Importa a fonte Inter do Google Fonts */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #e0f0ff, #f0f4ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0066ff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.secondary {
+  background-color: #ccc;
+  color: #333;
+}
+
+button:hover {
+  background-color: #004ccc;
+}
+
+button.secondary:hover {
+  background-color: #999;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
