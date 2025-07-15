@@ -21,7 +21,7 @@ function calcularMedia(){
     }
 
     let media = (notas[0] + notas[1]) / 2;//calculo da média
-    alert(`A média das notas é ${media.toFixed(1)}`);//caixa de alerta exibindo a media com 1 casa decimal (media.toFixed(1))
+    document.getElementById('resultado').textContent = `A média das notas é ${media.toFixed(1)}`;//caixa de alerta exibindo a media com 1 casa decimal (media.toFixed(1))
 }
 
 function limparCampos(){
@@ -30,4 +30,5 @@ function limparCampos(){
 
     nota2 = document.querySelector('#nota2');
     nota2.value = '';
+    document.getElementById('resultado').textContent = '';
 }
