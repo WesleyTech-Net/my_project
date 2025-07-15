@@ -1,11 +1,31 @@
-alert('Boas vindas ao jogo do número secreto');
-let numeroSecreto = 9;
-console.log(numeroSecreto)
-let chute = prompt('Escolha um número entre 1 e 10');
+//printa na tela em formad de uma pequena janela de aviso
+alert('BEM-VINDO AO JOGO: NÚMERO SECRETO');
 
-// se chute for igual ao número secreto
-if (chute == numeroSecreto) {
-    alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto}`);
-} else {
-    alert('Você errou :(')
+//variável para armazenar o número
+let numeroSecreto = 15;
+console.log('Valor do chute: ' + numeroSecreto);
+
+//input para pedir a escolha do número para o usuário 
+let escolha 
+
+console.log('Resultado da comparação: ', escolha == numeroSecreto);
+
+//enquanto chute não for igual ao número secreto ficará repetindo
+while (escolha != numeroSecreto){
+
+    escolha = prompt('Escolha um número entre 1 e 30: ');
+    //condição caso a escolha seja igual ao número secreto ou não seja igual ao número secreto 
+    if (escolha == numeroSecreto) {
+        //console.log é uma ferramenta para desenvolvimento, e não para usuários!
+        //utilize a crase para fazer a formatação
+        alert(`Parabéns você acertou o número secreto ${numeroSecreto}!`);
+    } else {
+        if (escolha > numeroSecreto){
+            alert(`O número secreto é menor que ${escolha}.`)
+        } else {
+            alert(`O número secreto é maior que ${escolha}`)
+        }
+    }
 }
+
+
