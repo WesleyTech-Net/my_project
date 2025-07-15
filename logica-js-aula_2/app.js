@@ -6,9 +6,9 @@ let numeroSecreto = 15;
 console.log('Valor do chute: ' + numeroSecreto);
 
 //input para pedir a escolha do número para o usuário 
-let escolha 
-
+let escolha;
 console.log('Resultado da comparação: ', escolha == numeroSecreto);
+let tentativas = 1;
 
 //enquanto chute não for igual ao número secreto ficará repetindo
 while (escolha != numeroSecreto){
@@ -18,14 +18,17 @@ while (escolha != numeroSecreto){
     if (escolha == numeroSecreto) {
         //console.log é uma ferramenta para desenvolvimento, e não para usuários!
         //utilize a crase para fazer a formatação
-        alert(`Parabéns você acertou o número secreto ${numeroSecreto}!`);
+        alert(`Parabéns você acertou o número secreto ${numeroSecreto} com ${tentativas} de tentativa(s)!`);
     } else {
         if (escolha > numeroSecreto){
-            alert(`O número secreto é menor que ${escolha}.`)
+            alert(`O número secreto é menor que ${escolha}.`);
         } else {
-            alert(`O número secreto é maior que ${escolha}`)
+            alert(`O número secreto é maior que ${escolha}`);
         }
+        
     }
+    //para incrementar da mesma forma que se faz em python "tentativas += 1"
+    tentativas ++;
 }
 
 
