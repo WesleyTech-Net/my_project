@@ -10,10 +10,12 @@ function valorMoedas(){
 }
 
 function converterMoeda(){
-    let converter = valorMoedas();
+    let moedas = valorMoedas();
 
     console.log(converter)
-    if(!converter){
+    if(!moedas){
         return;
     }
+
+
 }
