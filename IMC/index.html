@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IMC</title>
+</head>
+<body>
+    <header></header>
+    <main>
+
+        <h1>Cálculo de IMC (Índice de Massa Corporal)</h1>
+
+        <div class="input-group">
+            <label for="altura">Altura (m)</label>
+            <input type="number_float" step="0.1" id="altura" name="altura" placeholder="Ex: 1.60">
+        </div>
+
+        <div class="input-group">
+            <label for="peso">Peso (kg)</label>
+            <input type="number_float" step="0.1" id="peso" name="peso" placeholder="Ex: 70.5">
+        </div>
+
+        <div class="buttons">
+            <button type="button" onclick="calcularImc()">Calcular IMC</button>
+            <button type="button" onclick="limparDados()" class="secondary">Limpar</button>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+
+    </main>
+    <script src="app.js"></script>
+    <footer></footer>
+</body>
+</html>
