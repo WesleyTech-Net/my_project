@@ -22,20 +22,22 @@
         <div class="input-group">
             <label for="moedaDe">Converter de </label>
             <select name="moedaDe" id="moedaDe">
+                <option value="vazio">Escolha uma opção</option>
                 <option value="BRL">Real (BRL)</option>
                 <option value="USD">Dólar Americano (USD)</option>
                 <option value="EUR">Euro (EUR)</option>
-                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="CNY">Yuan (CNY)</option>
             </select>
         </div>
 
         <div class="input-group">
             <label for="moedaPara">Para</label>
             <select name="moedaPara" id="moedaPara">
+                <option value="vazio">Escolha uma opção</option>
                 <option value="BRL">Real (BRL)</option>
                 <option value="USD">Dólar Americano (USD)</option>
                 <option value="EUR">Euro (EUR)</option>
-                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="CNY">Yuan (CNY)</option>
             </select>
         </div>
 
@@ -45,6 +47,8 @@
         <div class="bnt-limpar">
             <button type="button" onclick="limparDados()">Limpar</button>
         </div>
+
+        <div class="resultado" id="resultado"></div>
     </main>
     <script src="app.js"></script>
     <footer></footer>
