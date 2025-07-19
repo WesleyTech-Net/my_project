@@ -1,0 +1,24 @@
+.apresentacao{
+    background-color: #4c4141; /*muda a cor de fundo*/
+    color: #f6f6f6; /*muda a cor do texto*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;/*Altera a fonte do texto*/
+    font-size: 20px; /*Altera o tamanho da font*/
+    line-height: 35px; /* Define a altura da linha como 35 pixels, controlando o espaçamento vertical entre as linhas de texto */
+
+}
+
+strong{
+    color: #329497; /*muda a cor do texto*/
+}
+
+span{
+    color: #329497; /*muda a cor do texto*/
+    border: 1px solid #329497;/* Cria uma borda de 1 pixel, linha sólida, na cor azul esverdeado (#329497) */
+    padding: 5px; /* Adiciona um espaçamento interno de 5 pixels em todos os lados (topo, direita, baixo e esquerda) do elemento */
+}
+
+h1{
+    font-weight: bold;  /* Define o peso da fonte como negrito, deixando o texto mais destacado e espesso */
+}
+
+

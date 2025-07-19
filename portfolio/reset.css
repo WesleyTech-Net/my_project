@@ -1,0 +1,85 @@
+/* 
+====================================================================
+📄 reset.css — O que é e por que usar?
+====================================================================
+
+Quando criamos uma página HTML, os navegadores (como Chrome, Firefox, Edge)
+aplicam automaticamente estilos padrões aos elementos (como margens, preenchimentos,
+tamanhos de fonte, espaçamento entre listas, etc.). Esses estilos variam de um
+navegador para outro, o que pode causar **inconsistência visual** no seu site.
+
+🔧 A função do arquivo reset.css é "resetar" ou "anular" todos esses estilos
+padrões aplicados pelos navegadores, removendo margens, bordas, espaçamentos,
+estilizações de listas, formatações de cabeçalhos, entre outros.
+
+✅ Com esse "reset", partimos de uma base **limpa e uniforme** para todos os navegadores.
+A partir daí, aplicamos nosso próprio estilo, com total controle visual.
+
+🧠 Você pode pensar no reset.css como:
+    - Um "botão de limpar" para estilos padrões dos navegadores;
+    - Um ponto de partida para construir o design do zero;
+    - Uma ferramenta para garantir que seu site fique **igual** em todos os dispositivos.
+
+⚠️ Importante:
+    - O reset.css deve ser carregado **antes** dos seus estilos personalizados.
+    - Ele não estiliza a página, ele apenas remove o que os navegadores aplicam por padrão.
+    - Você pode usar um reset personalizado (como esse que está aqui), ou usar um famoso
+      como o Normalize.css.
+
+Exemplo prático:
+    Antes do reset:
+        <h1>Título</h1> → já vem com margem e tamanho grande por padrão no navegador.
+    Depois do reset:
+        <h1>Título</h1> → aparece "cru", sem margem, sem tamanho, do jeito que você decidir.
+
+🎯 Resumo:
+    ➤ reset.css = ponto de partida padrão e limpo.
+    ➤ Evita diferenças visuais entre navegadores.
+    ➤ Facilita a criação de layouts consistentes e profissionais.
+
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
