@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Conversor de Moeda</title>
+</head>
+<body>
+    <header></header>
+    <main>
+
+        <h1>Conversor de Moeda</h1>
+
+        <div class="input-group">
+            <label for="valor">Valor</label>
+            <input type="number" step="0.1" name="valor" id="valor" placeholder="Ex: 5.57">
+        </div>
+
+        <div class="input-group">
+            <label for="moedaDe">Converter de </label>
+            <select name="moedaDe" id="moedaDe">
+                <option value="BRL">Real (BRL)</option>
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="BTC">Bitcoin (BTC)</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="moedaPara">Para</label>
+            <select name="moedaPara" id="moedaPara">
+                <option value="BRL">Real (BRL)</option>
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="BTC">Bitcoin (BTC)</option>
+            </select>
+        </div>
+
+        <div class="bnt-converter">
+            <button type="button" onclick="converterMoeda()">Converter</button>
+        </div>
+        <div class="bnt-limpar">
+            <button type="button" onclick="limparDados()">Limpar</button>
+        </div>
+    </main>
+    <script src="app.js"></script>
+    <footer></footer>
+</body>
+</html>
