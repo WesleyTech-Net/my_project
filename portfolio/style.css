@@ -1,11 +1,4 @@
-.apresentacao{
-    background-color: #4c4141; /*muda a cor de fundo*/
-    color: #f6f6f6; /*muda a cor do texto*/
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;/*Altera a fonte do texto*/
-    font-size: 20px; /*Altera o tamanho da font*/
-    line-height: 35px; /* Define a altura da linha como 35 pixels, controlando o espaçamento vertical entre as linhas de texto */
 
-}
 
 strong{
     color: #329497; /*muda a cor do texto*/
@@ -21,4 +14,19 @@ h1{
     font-weight: bold;  /* Define o peso da fonte como negrito, deixando o texto mais destacado e espesso */
 }
 
+body{
+    background-color: #4c4141; /*muda a cor de fundo*/
+    color: #f6f6f6; /*muda a cor do texto*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;/*Altera a fonte do texto*/
+    font-size: 20px; /*Altera o tamanho da font*/
+    line-height: 35px; /* Define a altura da linha como 35 pixels, controlando o espaçamento vertical entre as linhas de texto */
+    height: 100vh;/*usar 100% da tela*/
+    box-sizing: border-box;/* Define que o padding e a borda serão incluídos dentro da largura e altura total do elemento.
+   Isso evita que o tamanho real ultrapasse o especificado, facilitando o controle do layout.*/
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+}
 
