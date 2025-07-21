@@ -25,8 +25,22 @@ body{
    Isso evita que o tamanho real ultrapasse o especificado, facilitando o controle do layout.*/
 }
 
-.apresentacao{
-    display: flex;
-    align-items: center;
+.apresentacao {
+    margin: 4rem; /* Define uma margem externa de 4 rem (em todas as direções), afastando o elemento dos outros ao redor. */
+    display: flex; /* Transforma o elemento em um container flexível, permitindo alinhar seus filhos (itens internos) de forma mais eficiente. */
+    align-items: center; /* Alinha verticalmente os itens do flex container ao centro (no eixo cruzado). */
+    justify-content: space-between; /* Distribui os itens no eixo principal (horizontal), colocando espaço igual entre eles. O primeiro vai à esquerda, o último à direita. */
 }
 
+.apresentacao_conteudo{
+    width: 615px;
+    height: 615px;
+}
+
+.apresentacao_conteudo_titulo{
+    font-size: 50px;
+}
+
+.apresentacao_conteudo_texto{
+    font-size: 24px;
+}
