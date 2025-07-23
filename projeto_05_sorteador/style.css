@@ -232,23 +232,33 @@ h1 {
     }
 }
 
+/* NOVO ESTILO PARA O ENVOLTÓRIO */
+.footer-wrapper {
+    display: flex; /* ESSENCIAL para o justify-content funcionar */
+    justify-content: center; /* Centraliza o conteúdo (o footer) horizontalmente */
+    width: 100%; /* Ocupa a largura total da tela */
+    padding: 20px 0; /* Espaçamento interno vertical */
+    margin-top: 0px; /* Espaço entre o conteúdo principal e o rodapé */
+    /* background-color: rgba(255, 0, 0, 0.1); /* APENAS PARA DEBUG: Ajuda a ver o tamanho real do wrapper */
+}
+
 .footer {
     background: rgba(0, 0, 0, 0.3);
     color: var(--text-light);
-    text-align: center;
+    text-align: center; /* Alinha o texto *dentro* do footer ao centro. */
     padding: 20px 10px;
     font-size: 0.95rem;
-    margin-top: 40px;
+    margin-top: 0px; /* Excelente! Remove a margem superior que poderia causar problemas com o flexbox do wrapper. O espaçamento vertical agora deve vir do .footer-wrapper. */
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 
     /*Alinha corretamente */
-    width: 100%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%; /* O footer ocupará 100% da largura disponível *dentro* do footer-wrapper. */
+    max-width: 500px; /* Garante que o footer não ultrapasse 500px de largura, mantendo-o compacto. */
+    margin-left: 0px; /* Excelente! Remove a margem automática lateral que entrava em conflito com o 'justify-content: center;' do pai. */
+    margin-right: 0px; /* Excelente! Remove a margem automática lateral. */
     border-radius: var(--border-radius);
+    box-sizing: border-box; /* ESSENCIAL! Garante que o padding e a borda sejam incluídos na largura e altura total do elemento, evitando que ele "estoure" do seu contêiner. */
 }
-
