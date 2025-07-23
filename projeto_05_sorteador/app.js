@@ -1,3 +1,5 @@
+
+
 function limiteDeNumeros(){
     let numeroMinimo = parseInt(document.querySelector('#min-number').value);
     let numeroMaximo = parseInt(document.querySelector('#max-number').value);
@@ -18,13 +20,22 @@ function limiteDeNumeros(){
 }
 
 
-function sortearNumero(){
-    let sortear = limiteDeNumeros();
 
-    if(!sortear){
+function sortearNumero(){
+    const limites = limiteDeNumeros();
+
+    if(!limites){
         return;
     }
-    console.log(sortear)
+
+    const [minimo, maximo] = limites;
+
+    console.log([minimo, maximo]);
+
+    const sorteado = Math.floor(Math.random() * (maximo - minimo + 1)) + minimo;
+
+    document.getElementById('resultado').textContent = `NÚMERO SORTEADO: ${sorteado}`;
+    
 }
 
 function limparDados(){
@@ -33,4 +44,6 @@ function limparDados(){
 
     let numeroMaximo = document.querySelector('#max-number');
     numeroMaximo.value = ''; 
+
+    document.getElementById('resultado').textContent = '';
 }
