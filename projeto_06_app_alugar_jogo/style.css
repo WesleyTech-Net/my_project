@@ -1,0 +1,94 @@
+/* Reset básico: remove margens e preenchimentos padrão dos navegadores */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* Faz com que padding e border não aumentem o tamanho total dos elementos */
+}
+
+body{
+    background: url('imagens/fundo.png');
+    background-size: cover;
+    background-position: center;  /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
+    font-weight: 400; /**/
+    font-style: normal;
+    background-color: #24241E;/* Cor de fundo escura */
+    color: aliceblue; /* Cor clara para o texto */
+    line-height: 2;/* Espaçamento entre linhas para melhor leitura */
+    font-family: "peridot-pe-variable", sans-serif;
+    font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+}
+
+header{
+    background-color: #171714; /*cor de fundo mais escura no cabeçalho*/
+    padding: 10px 20px; /*espaçamento interno*/
+    display: flex;/*Layout em linha*/
+    justify-content: space-between; /*Espaço entre logo e menu*/
+    align-items: center; /*alinha verticalmente*/
+    flex-wrap: wrap; /*permite quebra em telas menores*/
+}
+
+/*------------------------CABEÇALHO------------------------------------*/
+header h1{
+    color: rgb(11, 105, 73); /*cor do título no cabeçalho verde*/
+    font-family: "peridot-pe-variable", sans-serif;
+    font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+}
+
+/*Links do menu de navegação*/
+nav a{
+    color: #d9d9ff; /*cor dos links do menu*/
+    text-decoration: none; /*remove o sublinhado*/
+    margin-left: 30px; /*espaçamento a esquerda entre os links*/
+    font-size: 20px;
+}
+
+nav a:hover{
+    color: #6565ec;
+}
+
+/* ================================
+   3. CONTEÚDO PRINCIPAL (MAIN)
+   ================================ */
+
+main{
+    padding: 20px 20px;
+}
+
+/* ================================
+   4. BANNER DE DESTAQUE
+   ================================ */
+
+.banner{
+    padding: 100px 20px;/*espaçamento interno do banner*/
+    text-align: center;/*centraliza o texto*/
+    color: white;
+    border-radius: 10px;/*arredondar as bordas do banner*/
+    margin-bottom: 20px; /*espaçamento abaixo do banner*/
+}
+
+.banner h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.banner p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: rgb(11, 105, 73);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background 0.4s;
+}
+
+.btn:hover{
+    background-color: rgb(6, 65, 45);
+}
